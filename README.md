@@ -23,6 +23,8 @@ To run the app on your local machine, follow these steps:
 
 6. Run the app using the following command:
 
+Flutter run
+
 
 ## Permissions
 
