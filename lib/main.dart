@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:app_usage/app_usage.dart';
-import 'package:usage_stats/usage_stats.dart';
 import 'package:intl/intl.dart';
 
 void main() {
@@ -35,13 +34,14 @@ class _AppUsagePageState extends State<AppUsagePage> {
 
   Future<void> _getUsageStats() async {
     try {
+      // Set the time range for app usage stats
       DateTime endDate = DateTime.now();
       DateTime startDate = endDate.subtract(Duration(hours: 1));
       AppUsage appUsage = AppUsage();
-      //  await appUsage.fetchUsage(startDate: DateTime.now().subtract(Duration(days: 7)), endDate: DateTime.now());
+      // Get app usage stats for the specified time range
       List<AppUsageInfo> usageStats =
           await appUsage.getAppUsage(startDate, endDate);
-      //sorting
+      // Sort the app usage stats by app name
       usageStats.sort((a, b) => a.appName.compareTo(b.appName));
 
       setState(() {

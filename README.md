@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+The Application shows all the apps available in mobile device.It shows the usage time of all the apps in minutes and also provides the information about last activity of every app with date and time.
 
 A few resources to get you started if this is your first Flutter project:
 
