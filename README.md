@@ -1,6 +1,6 @@
-# App Usage Demo
+# Tracking app
 
-This Flutter app displays the usage statistics of mobile applications on an Android device. It utilizes the `app_usage` package to fetch app usage data.
+This Tracking app displays the usage statistics of mobile applications on an Android device. It utilizes the `app_usage` package to fetch app usage data.
 
 ## Features
 
@@ -18,14 +18,15 @@ To run the app on your local machine, follow these steps:
 3. Open the project in your preferred IDE (e.g., Android Studio, Visual Studio Code).
 
 4. Install the required dependencies by running the following command in the project directory:
-
+```
+flutter pub get
+```
 5. Connect an Android device or start an Android emulator.
 
 6. Run the app using the following command:
-
-Flutter run
-
-
+```
+flutter run
+```
 ## Permissions
 
 The app requires the `PACKAGE_USAGE_STATS` permission to access app usage statistics. To grant this permission, follow these steps:
@@ -33,14 +34,17 @@ The app requires the `PACKAGE_USAGE_STATS` permission to access app usage statis
 1. Open the `android/app/src/main/AndroidManifest.xml` file.
 
 2. Add the following permission inside the `<manifest>` tag:
-
-```xml
+```
 <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
-
+```
 3. Save the file.
 
 ## Dependencies
 
 This app uses the app_usage package to fetch app usage statistics.
 
-For more information about the package, refer to its documentation on pub.dev.
+For more information about the package, refer to its documentation on [pub.dev](https://pub.dev/packages/app_usage).
+
+## License
+
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
